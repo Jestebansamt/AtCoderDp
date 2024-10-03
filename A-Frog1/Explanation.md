@@ -9,7 +9,7 @@
 2. **Transición**: 
    - Para calcular `dp[i]`, la rana puede llegar desde `dp[i+1]` o `dp[i+2]`:
      - `dp[i] = min(dp[i+1] + abs(v[i]-v[i+1]), dp[i+1] + abs(v[i]-v[i+2]);`
-   - El primer término representa el costo de saltar a la siguiente roca (`i+1`), mientras que el segundo término considera saltar desde la roca actual dos mas rocas  (`i+2`).
+   - El primer término representa el costo de saltar a la siguiente roca (`i+1`), mientras que el segundo término considera saltar desde la roca actual a dos rocas más (`i+2`).
 
 3. **Inicialización**:
    - `dp[0] = 0`: No hay costo en la primera roca, ya que empezamos desde ahí.
