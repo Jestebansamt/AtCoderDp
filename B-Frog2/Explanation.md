@@ -1,4 +1,4 @@
-# A - Frog 1
+# B - Frog 2
 **Fuente**: [https://atcoder.jp/contests/dp/tasks/dp_b](https://atcoder.jp/contests/dp/tasks/dp_b)
 
 ## Enfoque y Solución
@@ -7,7 +7,7 @@
    - En el estado `dp[i]`, queremos almacenar el costo total mínimo de alcanzar la roca `i` con las transiciones permitidas.
   
 2. **Transición**: 
-   - Para calcular `dp[i]`, la rana puede llegar desde `dp[i+1]`, `dp[i+2]` ... `dp[i+k]`, por lo tanto definimos las transiciones como un bucle que itera de 1 hasta k:
+   - Para calcular `dp[i]`, la rana puede llegar desde `dp[i+1]`, `dp[i+2]` ... `dp[i+k]`, por lo tanto, definimos las transiciones como un bucle que itera de 1 hasta k:
      - `for j = 1 to k: dp[i] = min(dp[i], abs(v[i] - v[i+j]) + f(i+j))`
    - El primer término representa el costo minimo acumulado entra saltar desde la roca actual (`i`) hasta la j-esima roca, mientras que el segundo término considera todas las iteraciones de saltar desde la roca actual a la k-esima (`i+k`).
 
