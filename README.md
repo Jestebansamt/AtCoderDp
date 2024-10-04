@@ -1,6 +1,6 @@
 # 🏆 AtCoder DP Contest (Es)
-### Guia y explicaciones para AtCoder DP Contest. 
-Respositorio con las **soluciones y analisis** de las soluciones de los problemas del contest de atCoder. 
+### Guía y explicaciones del AtCoder DP Contest. 
+Repositorio con las **soluciones y análisis** de las soluciones de los problemas del contest de atCoder. 
 
 ## Tabla de contenidos
 1. [A - Frog 1](https://github.com/Jestebansamt/AtCoderDp/tree/main/A%20-%20Frog1)
