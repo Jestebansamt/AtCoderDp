@@ -12,8 +12,8 @@
    - Este proceso se repetirá para cada ítem en la maleta. El orden es importante, por lo que se deben organizar según el valor de cada ítem, de manera que se prioricen los más valiosos.
 
 3. **Inicialización**:
-   - `dp[0][0] = 0`: La maleta tendrá un valor de 0 si no tiene ningún ítem.
-   - `dp[i][j] = dp[i-1][j]`: Antes de la transición el valor que tendrá la maleta será el valor mismo que tenía antes de considerar el ítem actual. De esa manera si no es posible agregar más elementos conservamos el máximo valor posible para esa configuración de peso/valor.
+   - `dp[0][0] = 0`: La maleta está vacia.
+   - `dp[i][j] = dp[i-1][j]`: Antes de la transición el valor que tendrá la maleta será el mismo valor que tenía antes de considerar el ítem actual. De esa manera si no es posible agregar más elementos conservamos el máximo valor posible para esa configuración de peso/valor.
    
 4. **Estado Final**: 
    - La respuesta se encuentra en `dp[n-1][w]`, el valor máximo considerando la capacidad de la maleta.
